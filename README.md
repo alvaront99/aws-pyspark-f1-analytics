@@ -79,8 +79,5 @@ Es fundamental aclarar la lógica detrás del stack tecnológico, ya que el proy
 
 
 ## Documentación
-La memoria técnica completa, que detalla el proceso de preparación del dato (Power Query / DAX) y la configuración de las tablas, se puede consultar en el archivo [ganadores_f1.docx.pdf](https://github.com/user-attachments/files/28176119/ganadores_f1.docx.pdf)
+La memoria técnica completa se puede consultar en el archivo [Memoria Técnica](ganadores_f1.docx.pdf).
 
-
----
-**Autor:** Álvaro Nuñez | **Perfil:** Data Engineer & Analyst
