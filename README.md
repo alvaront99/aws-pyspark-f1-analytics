@@ -11,34 +11,34 @@ El flujo de datos sigue un modelo de *Data Lakehouse*, priorizando la escalabili
 
 ```mermaid
 graph TD
-    subgraph "Ingesta y Limpieza"
-        Kaggle[Dataset: F1 CSV]
-        MySQL[(MySQL Local)]
-        Brew[AWS DataBrew]
+
+    subgraph "Data Source"
+        Kaggle[Dataset F1 CSV]
     end
 
-    subgraph "Cloud Storage & Catalog"
-        S3_Raw[S3: Bucket RAW]
-        GlueCat[AWS Glue Data Catalog]
+    subgraph "Data Lake"
+        RAW[S3 RAW]
+        CLEAN[S3 CLEAN]
     end
 
-    subgraph "Procesamiento"
-        EMR[AWS EMR Cluster]
-        Glue[AWS Glue ETL]
+    subgraph "Processing"
+        Glue[AWS Glue ETL / Spark]
     end
 
-    subgraph "Consumo"
+    subgraph "Metadata"
+        Catalog[Glue Data Catalog]
+    end
+
+    subgraph "Analytics"
         Athena[AWS Athena]
         PBI[Power BI + DAX]
     end
 
-    Kaggle --> MySQL
-    MySQL --> S3_Raw
-    Brew -.-> MySQL
-    S3_Raw --> EMR
-    S3_Raw --> Glue
-    Glue & EMR --> GlueCat
-    GlueCat --> Athena
+    Kaggle --> RAW
+    RAW --> Glue
+    Glue --> CLEAN
+    CLEAN --> Catalog
+    Catalog --> Athena
     Athena --> PBI
 ```
 
