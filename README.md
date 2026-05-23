@@ -19,7 +19,6 @@ graph TD
 
     subgraph "Cloud Storage & Catalog"
         S3_Raw[S3: Bucket RAW]
-        S3_Target[S3: Bucket Parquet/Target]
         GlueCat[AWS Glue Data Catalog]
     end
 
