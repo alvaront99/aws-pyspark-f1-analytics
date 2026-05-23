@@ -78,5 +78,5 @@ Es fundamental aclarar la lógica detrás del stack tecnológico, ya que el proy
 
 
 ## Documentación
-La memoria técnica completa se puede consultar en el archivo [Memoria Técnica](ganadores_f1.docx.pdf).
+La memoria técnica completa se puede consultar en el archivo [Memoria técnica](ganadores_f1.docx.pdf).
 
