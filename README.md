@@ -1,4 +1,4 @@
-# Data Pipeline: Evolución Histórica de la Fórmula 1 (1950-2020)
+# F1 Cloud Data Pipeline: Extracción, Transformación y Carga (ETL) en AWS
 
 ## 📝 Resumen del Proyecto
 Este proyecto consiste en el diseño e implementación de un flujo de datos de principio a fin (End-to-End) para el análisis estadístico de la Fórmula 1. El objetivo principal fue transformar un dataset histórico bruto en un modelo analítico capaz de extraer insights sobre el rendimiento de pilotos, escuderías y la evolución geográfica de los Grandes Premios a lo largo de 70 años.
